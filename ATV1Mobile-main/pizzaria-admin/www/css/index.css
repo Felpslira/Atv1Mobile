@@ -1,0 +1,198 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: #4B946A;
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 12px;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-lista, .app-cadastro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.app-lista {
+    padding: 20px;
+}
+
+.superior {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.linha {
+    padding: 10px;
+    border: solid 1px #ccc;
+    margin: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.botao-novo {
+    width: 90%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #4B946A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-novo:hover {
+    background-color: #3a7f54;
+}
+
+.app-cadastro {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagem {
+    flex: 3;
+    border: solid 1px #ccc;
+    height: 200px;
+    background-color: #e4e4e4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem p {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-linha {
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-linha-esq {
+    flex: 2;
+    font-size: 18px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.form-linha-dir {
+    flex: 3;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.botoes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.botao {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #4B946A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+}
+
+.botao:hover {
+    background-color: #3a7f54;
+}
+
+#btnFoto {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4B946A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btnFoto:hover {
+    background-color: #3a7f54;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-image: linear-gradient(to bottom, #585858 0%, #1B1B1B 51%);
+    }
+
+    .linha {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .botao-novo, .botao {
+        background-color: #3a7f54;
+    }
+
+    .imagem {
+        background-color: #ccc;
+    }
+}
